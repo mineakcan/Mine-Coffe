@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mine Coffe Website</title>
+
+    <link rel= "shortcut icon" href= "asset/img/favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel= "stylesheet" href= "asset/css/style.css">
+</head>
+<body>
+
+    <div class="load" id="load">
+        <img src="asset/img/loadcoffee.gif" alt="" class="load__gif">
+    </div>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+            <img src="asset/img/logo.png" alt="" class="nav__logo-img">
+            Mine Coffee.
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list" >
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link ">AnaSayfa</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">ürünler</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#premium" class="nav__link">Özel</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Blog</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt' ></i>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="home grid" id="home">
+            <div class="home__container">
+                <div class="home__content container">
+                    <h1 class="home__title">
+                        En Sevdiğin Kahveyi Seç Ve Tadını Çıkar<span>.</span>
+                    </h1>
+                    <p class="home__description">
+                        Lezzet Ödüllü kahveleri satın al.
+                    </p>
+
+                    <div class="home__data">
+                        <div class="home__data-group">
+                            <h2 class="home__data-number">120K</h2>
+                            <h3 class="home__data-title">Referanslar</h3>   
+                            <p class="home__data-description">
+                                Bize Güvenen Çeşitli Müşterilerden Gelen Referanslar.
+                            </p>
+                        </div>
+
+                        <div class="home__data-group">
+                            <h2 class="home__data-number">340+</h2>
+                            <h3 class="home__data-title">Özel ürün</h3>   
+                            <p class="home__data-description">
+                                Kaliteli Malzemelerle Birinci Sınıf Hazırlık.
+                            </p>
+                        </div>
+                    </div>
+                        <a href="#specialty">
+                            <img src="asset/img/scroll.png" alt="" class="home__scroll">
+                        </a>
+                    </div>
+                </div>   
+
+                <img src="asset/img/home.png" alt="" class="home__img">
+        </section>
+        
+        <div class="specialty section container" id= "specialty">
+            <div class="specialty__container">
+                <div class="spacialty__box">
+                    <h2 class="section__title">
+                        Sizi Mutlu Eden Ve Neşelendiren Özel Kahveler!
+                    </h2>
+                    <div>
+                        <a href="#" class="button specialty__button">Daha Fazlası</a>
+                    </div>
+                </div>
+
+                <div class="specialty__category">
+                    <div class="specialty__group specialty__line">
+                        <img src="asset/img/specialty1.png" alt="" class="specialty__img">
+
+                        <h3 class="specialty__title">Seçilmiş Kahve</h3>
+                        <p class="specialty__description">
+                            Gerçek Bir Tat İçin En İyi Premium Kahveyi Seçiyoruz.
+                        </p>
+                    </div>
+
+                    <div class="specialty__group specialty__line">
+                        <img src="asset/img/specialty2.png" alt="" class="specialty__img">
+
+                        <h3 class="specialty__title">Lezzetli Kurabiyeler</h3>
+                        <p class="specialty__description">
+                            Sıcak Kurabiyelerle Kahvenizin Tadını Çıkarın
+                        </p>
+                    </div>
+
+                    <div class="specialty__group ">
+                        <img src="asset/img/specialty3.png" alt="" class="specialty__img">
+
+                        <h3 class="specialty__title">Evde Keyfini Çıkarın</h3>
+                        <p class="specialty__description">
+                            Evinizin Rahatlığında En İyi Kahvenin Tadını Çıkarın.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="products section" id="products">
+            <div class="products__container container">
+                <h2 class="section__title">
+                    Lezzetli Ve En İyi Ürünlerimizi Seçin
+                </h2>
+
+                <ul class="products__filters">
+                    <li class="products__item products__line active-product" data-filter=".delicacies">
+                        <h3 class="products__title">Yeni Lezzetler</h3>
+                            <span class="products__stock">3 Ürün</span>
+                    </li>
+
+                    <li class="products__item products__line" data-filter=".coffee">
+                        <h3 class="products__title">Sıcak Kahveler</h3>
+                            <span class="products__stock">4 Ürün</span>
+                    </li>
+
+                    <li class="products__item" data-filter=".cake">
+                        <h3 class="products__title">Pastalar Ve Diğer Lezzetler</h3>
+                            <span class="products__stock">4 Ürün</span>
+                    </li>
+                </ul>
+                <div class="products__content grid">
+                    <article class="products__card delicacies">
+                        <div class="products__shape">
+                            <img src="asset/img/delicacies1.png" alt="" class="products__img">
+                        </div>
+                        <div class="products__data">
+                            <h2 class="products__price">27Tl</h2>
+                                <h3 class="products__name">Cookies</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag' ></i>
+                                </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card delicacies">
+                        <div class="products__shape">
+                            <img src="asset/img/delicacies2.png" alt="" class="products__img">
+                        </div>
+                        <div class="products__data">
+                            <h2 class="products__price">25Tl</h2>
+                                <h3 class="products__name">Kruvasan</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag' ></i>
+                                </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card delicacies">
+                        <div class="products__shape">
+                            <img src="asset/img/delicacies3.png" alt="" class="products__img">
+                        </div>
+                        <div class="products__data">
+                            <h2 class="products__price">25Tl</h2>
+                                <h3 class="products__name">Croissant</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag' ></i>
+                                </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="asset/img/coffee1.png" alt="" class="products__img">
+                        </div>
+                        <div class="products__data">
+                            <h2 class="products__price">35Tl</h2>
+                                <h3 class="products__name">Filtre Kahve</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag' ></i>
+                                </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="asset/img/coffee2.png" alt="" class="products__img">
+                        </div>
+                        <div class="products__data">
+                            <h2 class="products__price">36Tl</h2>
+                                <h3 class="products__name">Cappuccino</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag' ></i>
+                                </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="asset/img/coffee3.png" alt="" class="products__img">
+                        </div>
+                        <div class="products__data">
+                            <h2 class="products__price">39Tl</h2>
+                                <h3 class="products__name">White Chocolate Mocha</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag' ></i>
+                                </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card coffee">
+                        <div class="products__shape">
+                            <img src="asset/img/coffee4.png" alt="" class="products__img">
+                        </div>
+                        <div class="products__data">
+                            <h2 class="products__price">38Tl</h2>
+                                <h3 class="products__name">Espresso</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag' ></i>
+                                </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card cake">
+                        <div class="products__shape">
+                            <img src="asset/img/cake1.png" alt="" class="products__img">
+                        </div>
+                        <div class="products__data">
+                            <h2 class="products__price">37Tl</h2>
+                                <h3 class="products__name">Kremalı Pasta </h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag' ></i>
+                                </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card cake">
+                        <div class="products__shape">
+                            <img src="asset/img/cake2.png" alt="" class="products__img">
+                        </div>
+                        <div class="products__data">
+                            <h2 class="products__price">35Tl</h2>
+                                <h3 class="products__name">Çikolatalı Kruvasan</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag' ></i>
+                                </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card cake">
+                        <div class="products__shape">
+                            <img src="asset/img/cake3.png" alt="" class="products__img">
+                        </div>
+                        <div class="products__data">
+                            <h2 class="products__price">40Tl</h2>
+                                <h3 class="products__name">Pankek</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag' ></i>
+                                </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card cake">
+                        <div class="products__shape">
+                            <img src="asset/img/cake4.png" alt="" class="products__img">
+                        </div>
+                        <div class="products__data">
+                            <h2 class="products__price">37Tl</h2>
+                                <h3 class="products__name">Meyveli Pasta</h3>
+
+                                <button class="button products__button">
+                                    <i class='bx bx-shopping-bag' ></i>
+                                </button>
+                        </div>
+                    </article>
+                     
+                </div>
+            </div>
+
+        </section>
+        <section class="quality section" id="premium">
+            <div class="quality__co ntainer container">
+                <h2 class="section__title">
+                    Sadece sizin için birinci sınıf ve daha kaliteli bir hazırlık sunuyoruz!
+                </h2>
+
+                <div class="quality__content grid">
+                    <div class="quality__images">
+                        <img src="asset/img/quality1.png" alt="" class="quality__img-big">
+                        <img src="asset/img/quality2.png" alt="" class="quality__img-small">
+                    </div>
+
+                    <div class="quality__data">
+                        <h1 class="quality__title">Premium Kahve</h1>
+                        <h2 class="quality__price">299.99TL</h2>
+                        <span class="quality__special">Özel Fiyat</span>
+                        <p class="quality__description">
+                            Siz değerli müşterilerimize en iyi kahve deneyimi sunmak için buradayız.
+                            Kalieteli kahve artı dayanıklı malzemelerden yapılmış french press
+                            görselde gördüğünüz özel fiyatla.
+                        </p>
+
+                        <div class="quality__buttons">
+                            <button class="button">
+                                Satın al
+                            </button>
+
+                            <a href="#" class="quality__button">
+                                Daha Fazlası
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <section class="logo section">
+            <div class="logo__container container grid">
+                <img src="asset/img/logocoffee1.png" alt="" class="logo__img">
+                <img src="asset/img/logocoffee2.png" alt="" class="logo__img">
+                <img src="asset/img/logocoffee3.png" alt="" class="logo__img">
+                <img src="asset/img/logocoffee4.png" alt="" class="logo__img">
+                <img src="asset/img/logocoffee5.png" alt="" class="logo__img">
+            </div>
+        </section>
+
+        <section class="blog section" id="blog">
+            <div class="blog__container container">
+                <h2 class="section__title">
+                    Bu Haftanın Trend Konusu Olan Kahve
+                </h2>
+
+                <div class="blog__content grid">
+                    <article class="blog__card">
+                        <div class="blog__image">
+                            <img src="asset/img/blog1.png" alt="" class="blog__img">
+                            <a href="#" class="blog__button">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+
+                        <div class="blog__data">
+                            <h2 class="blog__title">
+                                5 Kahve Önerisi
+                            </h2>
+                                <p class="blog__description">
+                                    1-Kendinize En Uyan Kahveyi Seçin <br>
+                                    2-Kaliteli Kahve Alın  <br>
+                                    3-Kaynamış Su İle Kahvenizi Demlemeyin <br>
+                                    4-Doğru Kahve Filtresi Seçin <br>
+                                    5-Kahvenizi Çektikten Hemen Sonra Demleyin
+                                </p>
+
+                                <div class="blog__footer">
+                                    <div class="blog__reaction">
+                                        <i class='bx bx-comment'></i>
+                                        <span>12</span>
+                                    </div>
+                                    <div class="blog__reaction">
+                                        <i class='bx bx-show'></i>
+                                        <span>76,5K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog__card">
+                        <div class="blog__image">
+                            <img src="asset/img/blog2.png" alt="" class="blog__img">
+                            <a href="#" class="blog__button">
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </a>
+                        </div>
+
+                        <div class="blog__data">
+                            <h2 class="blog__title">
+                                Kahve İçmenin 9 Faydası
+                            </h2>
+                                <p class="blog__description">
+                                    1- Kahve, Güne Zinde Başlamaya Yardımcı Olur  <br>
+                                    2- Kahve, Bağışıklık Sistemini Güçlendirmede Etkilidir <br>
+                                    3- Kahve, Antioksidan Kaynağıdır <br>
+                                    4- Kahve, Parkinson ve Alzheimer Hastalığı Riskini Azaltmaya Yardımcı Olur <br>
+                                    5- Kahvenin Metabolizmayı Hızlandırıcı Etkisi Vardır <br>
+                                    6- Kahve, Sindirim Sürecine Yardımcı Olur <br>
+                                    7- Kahve, Fiziksel ve Zihinsel Performansı İyileştirir <br>
+                                    8- Kahve, Kalp Hastalığı Riskini Azaltmaya Yardımcı Olur <br>
+                                    9- Kahve, Karaciğerin Korunmasına Yardımcı Olur <br>
+                                </p>
+
+                                <div class="blog__footer">
+                                    <div class="blog__reaction">
+                                        <i class='bx bx-comment'></i>
+                                        <span>45</span>
+                                    </div>
+                                    <div class="blog__reaction">
+                                        <i class='bx bx-show'></i>
+                                        <span>356.5K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main> 
+
+    <footer class ="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Mine Coffee.</h1>
+
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <p class="footer__description">
+                        Haber bültenimize abone ol
+                    </p>
+
+                    <div class="footer__newsletter">
+                        <input type="email" placeholder="  Email adresiniz" class="footer__input">
+                        <button class="footer__button">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__subtitle">Adres</h2>
+                    <p class="footer__information">
+                        İstanbul  <br>
+                        Maslak 1453
+                        <img src="asset/img/footerflag.png" alt="" class="footer__flag">
+                    </p>
+                    
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__subtitle">İletişim</h2>
+                    <p class="footer__information">
+                        +90 5453514537 <br>
+                        Mine.coffee@email.com
+                    </p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__subtitle">Ofis</h2>
+                    <p class="footer__information">
+                        Pazartesi - Pazar <br>
+                        09.00 - 24.00
+                    </p>
+                </div>
+            </div>  
+
+            <div class="footer__group">
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                        
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+    <script src="asset/js/mixitup.min.js"></script>
+
+    <script src="asset/js/main.js"></script>
+    
+</body>
+</html>
